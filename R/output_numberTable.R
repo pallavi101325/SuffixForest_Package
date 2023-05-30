@@ -23,7 +23,7 @@ output_numberTable <- function(data1,path,min_supp,min_conf){
   print(outputfile)
   write.csv(number_table1, file = outputfile )
 
-  sr1 <- paste(path, "/SuffixForest_Package/R/replace.R")
+  src1 <- paste(path, "/SuffixForest_Package/R/replace.R")
   src1 <- gsub("\\s", "",  src1)
   source(src1)
 
